@@ -1,0 +1,16 @@
+{
+  "name": "marktex-realtime-collab",
+  "version": "1.0.0",
+  "description": "Server for supporting realtime collaboration",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "share": "~0.7.0",
+    "connect": "~3.0.0",
+    "redis": "~0.12.1"
+  },
+  "author": "Anders and Andreas",
+  "license": "ISC"
+}
