@@ -7,9 +7,14 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "share": "~0.7.0",
-    "connect": "~3.0.0",
-    "redis": "~0.12.1"
+    "share": "",
+    "connect": "~3.3.4",
+    "redis": "~0.12.1",
+    "stream": "",
+    "express": "",
+    "browserchannel": "",
+    "livedb": "",
+    "serve-static": ""
   },
   "author": "Anders and Andreas",
   "license": "ISC"
