@@ -1,5 +1,5 @@
 {
-  "name": "marktex-realtime-collab",
+  "name": "marktex-livecollab",
   "version": "1.0.0",
   "description": "Server for supporting realtime collaboration",
   "main": "index.js",
