@@ -19,5 +19,10 @@
     "cors": ""
   },
   "author": "Anders and Andreas",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "compression": "^1.4.1",
+    "grunt": "^0.4.5",
+    "grunt-git-describe": "^2.3.2"
+  }
 }
