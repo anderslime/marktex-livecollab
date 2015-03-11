@@ -7,16 +7,17 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "share": "",
-    "connect": "~3.3.4",
-    "redis": "~0.12.1",
-    "stream": "",
-    "express": "",
     "browserchannel": "",
+    "compression": "^1.4.1",
+    "connect": "~3.3.4",
+    "cors": "",
+    "express": "",
     "livedb": "",
     "livedb-mongo": "",
+    "redis": "~0.12.1",
     "serve-static": "",
-    "cors": ""
+    "share": "",
+    "stream": ""
   },
   "author": "Anders and Andreas",
   "license": "ISC",
