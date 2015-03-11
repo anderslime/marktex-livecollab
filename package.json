@@ -18,7 +18,9 @@
     "redis": "~0.12.1",
     "serve-static": "",
     "share": "",
-    "stream": ""
+    "stream": "",
+    "cors": "",
+    "request": ""
   },
   "author": "Anders and Andreas",
   "license": "ISC",
