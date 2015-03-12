@@ -14,6 +14,7 @@
     "express": "",
     "livedb": "",
     "livedb-mongo": "",
+    "opbeat": "^1.2.0",
     "redis": "~0.12.1",
     "serve-static": "",
     "share": "",
