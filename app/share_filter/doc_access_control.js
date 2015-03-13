@@ -1,6 +1,7 @@
 var request = require('request');
 
 module.exports = function(collection, docName, data, next) {
+  if (docName === 'dojo') return next(); // For frontpage to work w/o auth
   if (!this._user) return next("Not Authenticated");
   if (this._user.permittedDocIds.indexOf(docName) !== -1) return next();
   var _user = this._user;
