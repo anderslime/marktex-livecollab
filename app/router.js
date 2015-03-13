@@ -1,5 +1,6 @@
 var browserChannel = require('browserchannel').server;
 var Duplex = require('stream').Duplex;
+var config = require('../tmp/config');
 
 var numClients = 0;
 
@@ -8,7 +9,7 @@ module.exports = function(webserver, shareServer) {
     webserver: webserver,
     sessionTimeoutInterval: 5000,
     corsAllowCredentials: true,
-    cors: "http://localhost:9000"
+    cors: config.corsOrigin
   }, function(client) {
     var stream;
     numClients++;

@@ -13,8 +13,20 @@ module.exports = function (grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     config: {
-      dev: { },
-      dist: { }
+      dev: {
+        urls: {
+          me: 'http://localhost:3000/me',
+          docs: 'http://localhost:3000/docs'
+        },
+        corsOrigin: 'http://localhost:9000'
+      },
+      dist: {
+        urls: {
+          me: 'http://api.dtu.ninja/me',
+          docs: 'http://api.dtu.ninja/docs'
+        },
+        corsOrigin: 'http://dtu.ninja'
+      }
     },
     develop: {
       server: {
