@@ -16,11 +16,10 @@
     "livedb-mongo": "",
     "opbeat": "^1.2.0",
     "redis": "~0.12.1",
+    "request": "^2.53.0",
     "serve-static": "",
     "share": "",
-    "stream": "",
-    "cors": "",
-    "request": ""
+    "stream": ""
   },
   "devDependencies": {
     "grunt": "~0.4.5",
@@ -29,7 +28,6 @@
     "grunt-file-creator": "^0.1.2",
     "load-grunt-tasks": "~2.0.0",
     "time-grunt": "^1.1.0"
-
   },
   "author": "Anders and Andreas",
   "license": "ISC"
