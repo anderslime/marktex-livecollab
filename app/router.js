@@ -4,6 +4,8 @@ var config = require('../tmp/config');
 
 var numClients = 0;
 
+console.log(config);
+
 module.exports = function(webserver, shareServer) {
   return browserChannel({
     webserver: webserver,
