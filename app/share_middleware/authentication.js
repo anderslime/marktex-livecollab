@@ -7,6 +7,7 @@ var config = require('../../tmp/config');
 module.exports = function(req, next) {
   if (req.action === 'connect') {
     var rawCookie = req.agent.stream.headers.cookie;
+    console.log("cookie='"+rawCookie);
     if (!rawCookie) return next();
     request.get({
       url: config.urls.me,
