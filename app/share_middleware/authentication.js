@@ -9,6 +9,7 @@ module.exports = function(req, next) {
 
     // no cookies here!!
     var rawCookie = req.agent.stream.headers.cookie;
+    console.log("cookie='"+rawCookie);
     if (!rawCookie) return next();
     request.get({
       url: config.urls.me,
