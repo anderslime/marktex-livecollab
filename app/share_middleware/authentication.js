@@ -5,24 +5,9 @@ var request = require('request');
 var config = require('../../tmp/config');
 
 module.exports = function(req, next) {
-  if (req.action === 'connect') {
+  //pass on cookie for filter
+  if (req.action === 'connect')
+    req.agent.params = { cookie: req.req.cookie, spark: req.req.spark};
 
-    // no cookies here!!
-    var rawCookie = req.agent.stream.headers.cookie;
-    console.log("cookie='"+rawCookie);
-    if (!rawCookie) return next();
-    request.get({
-      url: config.urls.me,
-      headers: { 'Cookie': rawCookie }
-    }, function(error, response, body) {
-      if (!error && response && response.statusCode === 200) {
-        req.agent._user = JSON.parse(body);
-        req.agent._user.cookie = rawCookie;
-        req.agent._user.permittedDocIds = [];
-      }
-      next();
-    });
-  } else {
-    next();
-  }
+  next();
 };
